@@ -464,20 +464,26 @@
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,340)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="IN_A"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(230,360)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="IN_B"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(380,380)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(370,390)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(720,340)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Sum"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
       <a name="output" val="true"/>
       <a name="radix" val="16"/>
       <a name="width" val="17"/>
@@ -489,9 +495,135 @@
     <wire from="(230,340)" to="(410,340)"/>
     <wire from="(230,360)" to="(280,360)"/>
     <wire from="(310,360)" to="(410,360)"/>
-    <wire from="(380,380)" to="(410,380)"/>
+    <wire from="(370,380)" to="(370,390)"/>
+    <wire from="(370,380)" to="(410,380)"/>
     <wire from="(410,360)" to="(420,360)"/>
     <wire from="(630,340)" to="(720,340)"/>
     <wire from="(720,340)" to="(730,340)"/>
+  </circuit>
+  <circuit name="ALU">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ALU"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(410,280)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(570,810)" name="OR Gate">
+      <a name="size" val="70"/>
+    </comp>
+    <comp lib="1" loc="(580,670)" name="AND Gate">
+      <a name="size" val="70"/>
+    </comp>
+    <comp loc="(630,240)" name="adder16"/>
+    <comp loc="(630,370)" name="subtractor16"/>
+  </circuit>
+  <circuit name="left_bit_shifter16">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="left_bit_shifter16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(270,470)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="IN_A"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(300,470)" name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(320,460)" name="Ground">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,300)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(450,460)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(490,460)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Result"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+    </comp>
+    <wire from="(270,470)" to="(300,470)"/>
+    <wire from="(320,310)" to="(430,310)"/>
+    <wire from="(320,320)" to="(430,320)"/>
+    <wire from="(320,330)" to="(430,330)"/>
+    <wire from="(320,340)" to="(430,340)"/>
+    <wire from="(320,350)" to="(430,350)"/>
+    <wire from="(320,360)" to="(430,360)"/>
+    <wire from="(320,370)" to="(430,370)"/>
+    <wire from="(320,380)" to="(430,380)"/>
+    <wire from="(320,390)" to="(430,390)"/>
+    <wire from="(320,400)" to="(430,400)"/>
+    <wire from="(320,410)" to="(430,410)"/>
+    <wire from="(320,420)" to="(430,420)"/>
+    <wire from="(320,430)" to="(430,430)"/>
+    <wire from="(320,440)" to="(430,440)"/>
+    <wire from="(320,450)" to="(430,450)"/>
+    <wire from="(450,460)" to="(490,460)"/>
+    <wire from="(490,460)" to="(500,460)"/>
+  </circuit>
+  <circuit name="right_bit_shifter16">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="right_bit_shifter16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(270,470)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="IN_A"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(300,470)" name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(320,310)" name="Ground">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,470)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(450,480)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(490,480)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Result"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+    </comp>
+    <wire from="(270,470)" to="(300,470)"/>
+    <wire from="(320,320)" to="(430,320)"/>
+    <wire from="(320,330)" to="(430,330)"/>
+    <wire from="(320,340)" to="(430,340)"/>
+    <wire from="(320,350)" to="(430,350)"/>
+    <wire from="(320,360)" to="(430,360)"/>
+    <wire from="(320,370)" to="(430,370)"/>
+    <wire from="(320,380)" to="(430,380)"/>
+    <wire from="(320,390)" to="(430,390)"/>
+    <wire from="(320,400)" to="(430,400)"/>
+    <wire from="(320,410)" to="(430,410)"/>
+    <wire from="(320,420)" to="(430,420)"/>
+    <wire from="(320,430)" to="(430,430)"/>
+    <wire from="(320,440)" to="(430,440)"/>
+    <wire from="(320,450)" to="(430,450)"/>
+    <wire from="(320,460)" to="(430,460)"/>
+    <wire from="(450,480)" to="(490,480)"/>
+    <wire from="(490,480)" to="(500,480)"/>
   </circuit>
 </project>
