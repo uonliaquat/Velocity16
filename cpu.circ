@@ -335,7 +335,11 @@
       <a name="incoming" val="16"/>
       <a name="spacing" val="2"/>
     </comp>
-    <comp lib="0" loc="(380,770)" name="Ground"/>
+    <comp lib="0" loc="(380,760)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="IN_Carry"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
     <comp lib="0" loc="(760,780)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="16"/>
@@ -396,7 +400,6 @@
     <wire from="(290,330)" to="(400,330)"/>
     <wire from="(300,120)" to="(300,680)"/>
     <wire from="(300,120)" to="(400,120)"/>
-    <wire from="(380,760)" to="(380,770)"/>
     <wire from="(380,760)" to="(400,760)"/>
     <wire from="(400,100)" to="(410,100)"/>
     <wire from="(400,140)" to="(400,260)"/>
@@ -453,5 +456,42 @@
     <wire from="(740,350)" to="(740,370)"/>
     <wire from="(740,770)" to="(740,800)"/>
     <wire from="(760,780)" to="(810,780)"/>
+  </circuit>
+  <circuit name="subtractor16">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="subtractor16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(230,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(230,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(380,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(720,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="17"/>
+    </comp>
+    <comp lib="1" loc="(310,360)" name="NOT Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp loc="(630,340)" name="adder16"/>
+    <wire from="(230,340)" to="(410,340)"/>
+    <wire from="(230,360)" to="(280,360)"/>
+    <wire from="(310,360)" to="(410,360)"/>
+    <wire from="(380,380)" to="(410,380)"/>
+    <wire from="(410,360)" to="(420,360)"/>
+    <wire from="(630,340)" to="(720,340)"/>
+    <wire from="(720,340)" to="(730,340)"/>
   </circuit>
 </project>
