@@ -56,133 +56,49 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1860,700)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(200,490)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="radix" val="10unsigned"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(250,610)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(250,660)" name="Power">
+    <comp lib="0" loc="(120,250)" name="Power">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(630,610)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit10" val="none"/>
-      <a name="bit11" val="none"/>
-      <a name="bit12" val="none"/>
-      <a name="bit13" val="none"/>
-      <a name="bit14" val="none"/>
-      <a name="bit15" val="none"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="none"/>
-      <a name="bit5" val="none"/>
-      <a name="bit6" val="none"/>
-      <a name="bit7" val="none"/>
-      <a name="bit8" val="none"/>
-      <a name="bit9" val="none"/>
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="16"/>
+    <comp lib="0" loc="(140,160)" name="Power"/>
+    <comp lib="0" loc="(180,410)" name="Constant">
+      <a name="value" val="0xffff"/>
+      <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(680,470)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit10" val="none"/>
-      <a name="bit11" val="none"/>
-      <a name="bit12" val="none"/>
-      <a name="bit13" val="none"/>
-      <a name="bit14" val="none"/>
-      <a name="bit15" val="none"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="none"/>
-      <a name="bit9" val="none"/>
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="16"/>
+    <comp lib="0" loc="(250,310)" name="Ground">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(690,680)" name="Splitter">
-      <a name="appear" val="right"/>
-      <a name="bit0" val="2"/>
-      <a name="bit1" val="2"/>
-      <a name="bit10" val="3"/>
-      <a name="bit11" val="3"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit3" val="2"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-      <a name="bit8" val="3"/>
-      <a name="bit9" val="3"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="16"/>
-      <a name="spacing" val="2"/>
+    <comp lib="0" loc="(250,440)" name="Ground"/>
+    <comp lib="0" loc="(460,130)" name="Ground">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="8" loc="(1266,822)" name="Text">
-      <a name="color" val="#ed7300"/>
-      <a name="font" val="SansSerif bold 18"/>
-      <a name="text" val="Data Memory"/>
+    <comp lib="0" loc="(500,390)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(447,451)" name="Text">
-      <a name="color" val="#ed7300"/>
-      <a name="font" val="SansSerif bold 18"/>
-      <a name="text" val="Instruction Memory"/>
+    <comp lib="8" loc="(464,103)" name="Text">
+      <a name="text" val="INSTRUCTION MEMORY"/>
     </comp>
-    <comp lib="8" loc="(447,584)" name="Text">
-      <a name="color" val="#bd0511"/>
-      <a name="text" val="Program Counter"/>
-    </comp>
-    <comp lib="8" loc="(456,363)" name="Text">
-      <a name="color" val="#a6008d"/>
-      <a name="font" val="SansSerif bolditalic 30"/>
-      <a name="text" val="Fetch the instruction"/>
-    </comp>
-    <comp loc="(1370,690)" name="RegisterFile16"/>
-    <comp loc="(1810,700)" name="ALU"/>
-    <comp loc="(560,470)" name="instruction_memory"/>
-    <comp loc="(560,610)" name="register16"/>
-    <wire from="(1030,770)" to="(1150,770)"/>
-    <wire from="(1120,730)" to="(1150,730)"/>
-    <wire from="(1370,670)" to="(1370,690)"/>
-    <wire from="(1440,720)" to="(1590,720)"/>
-    <wire from="(1440,740)" to="(1590,740)"/>
-    <wire from="(1590,660)" to="(1590,700)"/>
-    <wire from="(1810,700)" to="(1860,700)"/>
-    <wire from="(1810,720)" to="(1820,720)"/>
-    <wire from="(1820,720)" to="(1820,990)"/>
-    <wire from="(200,490)" to="(340,490)"/>
-    <wire from="(250,610)" to="(340,610)"/>
-    <wire from="(250,630)" to="(250,660)"/>
-    <wire from="(250,630)" to="(290,630)"/>
-    <wire from="(290,630)" to="(290,650)"/>
-    <wire from="(290,630)" to="(340,630)"/>
-    <wire from="(290,650)" to="(340,650)"/>
-    <wire from="(330,470)" to="(330,530)"/>
-    <wire from="(330,470)" to="(340,470)"/>
-    <wire from="(330,530)" to="(660,530)"/>
-    <wire from="(560,470)" to="(680,470)"/>
-    <wire from="(560,610)" to="(610,610)"/>
-    <wire from="(610,610)" to="(610,680)"/>
-    <wire from="(610,610)" to="(630,610)"/>
-    <wire from="(610,680)" to="(690,680)"/>
-    <wire from="(650,600)" to="(660,600)"/>
-    <wire from="(660,530)" to="(660,600)"/>
-    <wire from="(700,460)" to="(1150,460)"/>
-    <wire from="(710,750)" to="(1150,750)"/>
+    <comp loc="(160,210)" name="register16"/>
+    <comp loc="(280,370)" name="adder16"/>
+    <comp loc="(520,630)" name="register_file"/>
+    <comp loc="(560,250)" name="RAM_256x16"/>
+    <comp loc="(910,660)" name="ALU"/>
+    <wire from="(160,210)" to="(180,210)"/>
+    <wire from="(180,210)" to="(180,330)"/>
+    <wire from="(180,210)" to="(360,210)"/>
+    <wire from="(180,330)" to="(200,330)"/>
+    <wire from="(180,410)" to="(200,410)"/>
+    <wire from="(250,430)" to="(250,440)"/>
+    <wire from="(280,370)" to="(320,370)"/>
+    <wire from="(320,370)" to="(320,480)"/>
+    <wire from="(50,210)" to="(50,480)"/>
+    <wire from="(50,210)" to="(80,210)"/>
+    <wire from="(50,480)" to="(320,480)"/>
+    <wire from="(520,630)" to="(810,630)"/>
+    <wire from="(520,680)" to="(810,680)"/>
+    <wire from="(560,250)" to="(630,250)"/>
+    <wire from="(630,250)" to="(630,340)"/>
+    <wire from="(810,610)" to="(810,630)"/>
+    <wire from="(810,680)" to="(810,710)"/>
   </circuit>
   <circuit name="full_adder">
     <a name="appearance" val="logisim_evolution"/>
@@ -404,10 +320,29 @@
     <wire from="(750,360)" to="(810,360)"/>
   </circuit>
   <circuit name="adder16">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="adder16"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <polygon fill="#faffd9" points="244,158 299,192 299,267 244,304 245,243 258,228 244,214" stroke="#000000"/>
+      <polyline fill="none" points="245,190 231,190" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="245,270 232,270" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="300,230 310,230" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="280,180 280,170" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="280,280 280,291" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" fill="#d66600" font-family="SansSerif" font-size="8" text-anchor="middle" x="255" y="191">OP1</text>
+      <text dominant-baseline="central" fill="#d66600" font-family="SansSerif" font-size="8" text-anchor="middle" x="256" y="270">OP2</text>
+      <text dominant-baseline="central" fill="#d66600" font-family="SansSerif" font-size="8" text-anchor="middle" x="278" y="272">CO</text>
+      <text dominant-baseline="central" fill="#d66600" font-family="SansSerif" font-size="8" text-anchor="middle" x="278" y="188">CIN</text>
+      <text dominant-baseline="central" fill="#d66600" font-family="SansSerif" font-size="8" text-anchor="middle" x="288" y="230">Sum</text>
+      <circ-anchor facing="east" height="6" width="6" x="307" y="227"/>
+      <circ-port height="10" pin="800,130" width="10" x="275" y="285"/>
+      <circ-port height="10" pin="810,780" width="10" x="305" y="225"/>
+      <circ-port height="8" pin="130,750" width="8" x="226" y="266"/>
+      <circ-port height="8" pin="150,170" width="8" x="226" y="186"/>
+      <circ-port height="8" pin="380,760" width="8" x="276" y="166"/>
+    </appear>
     <comp lib="0" loc="(130,750)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="IN_B"/>
@@ -629,17 +564,36 @@
     <comp loc="(630,340)" name="adder16"/>
     <wire from="(230,340)" to="(410,340)"/>
     <wire from="(230,360)" to="(280,360)"/>
-    <wire from="(310,360)" to="(410,360)"/>
+    <wire from="(310,360)" to="(420,360)"/>
     <wire from="(370,380)" to="(370,390)"/>
     <wire from="(370,380)" to="(410,380)"/>
-    <wire from="(410,360)" to="(420,360)"/>
     <wire from="(630,360)" to="(720,360)"/>
   </circuit>
   <circuit name="ALU">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <polygon fill="#ffe1c2" points="190,140 265,179 265,280 190,319 190,246 213,228 190,211" stroke="#000000"/>
+      <polyline fill="none" points="266,230 280,230" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="230,159 230,151" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="230,299 230,309" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="190,179 179,179" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="190,280 181,280" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" fill="#2e3332" font-family="SansSerif" font-size="8" text-anchor="middle" x="256" y="229">Res</text>
+      <text dominant-baseline="central" fill="#2e3332" font-family="SansSerif" font-size="8" text-anchor="middle" x="226" y="169">Opcode</text>
+      <text dominant-baseline="central" fill="#2e3332" font-family="SansSerif" font-size="8" text-anchor="middle" x="201" y="180">OP1</text>
+      <text dominant-baseline="central" fill="#2e3332" font-family="SansSerif" font-size="8" text-anchor="middle" x="202" y="280">OP2</text>
+      <text dominant-baseline="central" fill="#2e3332" font-family="SansSerif" font-size="8" text-anchor="middle" x="229" y="286">Carry</text>
+      <text dominant-baseline="central" fill="#2e0000" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="230" y="228">ALU</text>
+      <circ-anchor facing="east" height="6" width="6" x="277" y="227"/>
+      <circ-port height="10" pin="1160,180" width="10" x="225" y="305"/>
+      <circ-port height="10" pin="1170,320" width="10" x="275" y="225"/>
+      <circ-port height="8" pin="130,440" width="8" x="226" y="146"/>
+      <circ-port height="8" pin="150,480" width="8" x="176" y="176"/>
+      <circ-port height="8" pin="150,510" width="8" x="176" y="276"/>
+    </appear>
     <comp lib="0" loc="(1160,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -2943,15 +2897,51 @@
     <wire from="(680,540)" to="(790,540)"/>
     <wire from="(680,560)" to="(790,560)"/>
   </circuit>
-  <circuit name="RAM_1Kx16">
+  <circuit name="multiplexer2_1">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="RAM_1Kx16"/>
+    <a name="circuit" val="multiplexer2_1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(450,710)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="addr_in"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp loc="(720,710)" name="decoder1x2"/>
+    <wire from="(450,710)" to="(500,710)"/>
+  </circuit>
+  <circuit name="RAM_256x16">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="RAM_256x16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#30aeeb" height="238" stroke="#000000" width="180" x="50" y="50"/>
+      <polyline fill="none" points="50,120 42,120" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="49,190 41,190" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="140,49 140,42" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="231,160 239,160" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="100,289 100,298" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="180,289 180,299" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="65" y="120">Addr</text>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="64" y="190">Data</text>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="208" y="160">DataOut</text>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="101" y="280">CLK</text>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="181" y="280">OE</text>
+      <text dominant-baseline="central" fill="#f7fbff" font-family="SansSerif" font-size="8" text-anchor="middle" x="139" y="59">WE</text>
+      <text dominant-baseline="central" fill="#020302" font-family="SansSerif" font-size="20" font-weight="bold" text-anchor="middle" x="139" y="175">R A M</text>
+      <circ-anchor facing="east" height="6" width="6" x="237" y="157"/>
+      <circ-port height="10" pin="1300,550" width="10" x="235" y="155"/>
+      <circ-port height="8" pin="840,490" width="8" x="136" y="36"/>
+      <circ-port height="8" pin="840,510" width="8" x="176" y="296"/>
+      <circ-port height="8" pin="840,530" width="8" x="96" y="296"/>
+      <circ-port height="8" pin="850,470" width="8" x="36" y="116"/>
+      <circ-port height="8" pin="860,550" width="8" x="36" y="186"/>
+    </appear>
     <comp lib="0" loc="(1300,550)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="data_out"/>
+      <a name="label" val="DataOut"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="output" val="true"/>
       <a name="radix" val="16"/>
@@ -2959,34 +2949,35 @@
     </comp>
     <comp lib="0" loc="(840,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="EN"/>
+      <a name="label" val="WE"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(840,510)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="LD"/>
+      <a name="label" val="OE"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(840,530)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Clk"/>
+      <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(850,470)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="addr_in"/>
+      <a name="label" val="Addr"/>
       <a name="labelfont" val="SansSerif bold 12"/>
-      <a name="radix" val="10unsigned"/>
-      <a name="width" val="8"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(860,550)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="data_in"/>
+      <a name="label" val="Data"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="4" loc="(960,460)" name="RAM">
+      <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="dataWidth" val="16"/>
     </comp>
@@ -3000,19 +2991,6 @@
     <wire from="(870,520)" to="(960,520)"/>
     <wire from="(890,490)" to="(890,510)"/>
     <wire from="(890,510)" to="(960,510)"/>
-  </circuit>
-  <circuit name="multiplexer2_1">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="multiplexer2_1"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(450,710)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="addr_in"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
-    <comp loc="(720,710)" name="decoder1x2"/>
-    <wire from="(450,710)" to="(500,710)"/>
   </circuit>
   <circuit name="decoder1x2">
     <a name="appearance" val="logisim_evolution"/>
@@ -3232,11 +3210,43 @@
     <wire from="(770,1250)" to="(770,1430)"/>
     <wire from="(770,1430)" to="(1080,1430)"/>
   </circuit>
-  <circuit name="memory">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="memory"/>
+  <circuit name="register_file">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="register_file"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#c6e6a3" height="185" stroke="#000000" width="120" x="50" y="50"/>
+      <polyline fill="none" points="80,48 80,41" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="130,49 130,41" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="170,110 180,110" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="171,160 180,160" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="49,100 41,100" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="48,140 42,140" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="49,180 39,180" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="80,235 80,248" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="130,235 130,249" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="83" y="58">WriteAddr</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="130" y="57">WE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="150" y="110">D_OUT1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="152" y="160">D_OUT2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="75" y="140">ReadAddr1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="76" y="180">ReadAddr2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="64" y="101">D_IN</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="81" y="229">CLK</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="130" y="229">OE</text>
+      <text dominant-baseline="central" fill="#d40013" font-family="SansSerif" font-size="14" font-weight="bold" text-anchor="middle" x="110" y="208">Register File</text>
+      <circ-anchor facing="east" height="6" width="6" x="177" y="107"/>
+      <circ-port height="10" pin="1510,350" width="10" x="175" y="105"/>
+      <circ-port height="10" pin="1510,720" width="10" x="175" y="155"/>
+      <circ-port height="8" pin="150,380" width="8" x="76" y="36"/>
+      <circ-port height="8" pin="1510,470" width="8" x="36" y="136"/>
+      <circ-port height="8" pin="1510,860" width="8" x="36" y="176"/>
+      <circ-port height="8" pin="160,810" width="8" x="126" y="36"/>
+      <circ-port height="8" pin="160,860" width="8" x="76" y="246"/>
+      <circ-port height="8" pin="160,950" width="8" x="126" y="246"/>
+      <circ-port height="8" pin="190,80" width="8" x="36" y="96"/>
+    </appear>
     <comp lib="0" loc="(150,380)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="WriteAddr"/>
